@@ -1,0 +1,267 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.staff,
+.home {
+  background-color: #f39440;
+  color: black;
+}
+
+.home,
+.user,
+.ticketsBody {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home,
+.user {
+  text-align: center;
+}
+
+.home h1 {
+  margin: 5px;
+}
+
+.home h1:nth-child(3) {
+  font-weight: 300;
+}
+
+.home h2 {
+  margin-top: 10vh;
+  margin-bottom: 5px;
+}
+
+.home a {
+  background-color: #231f42;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.home a:hover {
+  background-color: #0f0c27;
+  text-decoration: underline;
+}
+
+.user {
+  background: #231f42;
+}
+
+.user h1,
+.ticketsBody h1,
+.ticketsBody .name {
+  color: #f56b9a;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+#eventsList {
+  list-style: none;
+  padding: 0;
+}
+
+#eventsList li {
+  color: white;
+  margin-bottom: 20px;
+  width: 90vw;
+  cursor: pointer;
+
+  display: flex;
+}
+
+#eventsList li:hover {
+  background-color: #0f0c27;
+}
+
+.dateHolder {
+  width: 7rem;
+  margin-right: 20px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.dateHolder .date {
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  margin: 0;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
+}
+
+.infoHolder {
+  width: 100%;
+  flex: 1;
+  border-bottom: 1px solid white;
+}
+
+.firstRow,
+.secondRow,
+.thirdRow {
+  display: flex;
+  padding: 0px 5px;
+}
+
+.infoHolder .name {
+  text-shadow: 1px 1px 0px pink;
+  font-size: 2rem;
+}
+
+.thirdRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoHolder .price {
+  font-size: 1.5rem;
+  color: teal;
+  font-weight: bold;
+}
+
+.dateHolder .time {
+  margin: 0;
+}
+
+.firstRow *,
+.secondRow *,
+.thirdRow * {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.secondRow *,
+.thirdRow * {
+  font-size: 1.2rem;
+}
+
+.ticketsBody {
+  background: rgb(244, 106, 144);
+  background: linear-gradient(
+    180deg,
+    rgba(244, 106, 144, 1) 0%,
+    rgba(35, 31, 66, 1) 50%
+  );
+  background-repeat: no-repeat;
+}
+
+.ticketsBody h2,
+.ticketsBody p {
+  margin: 0;
+}
+
+.ticketsBody h2 {
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-weight: bold;
+}
+
+#ticket {
+  width: 80vw;
+  max-width: 360px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+#what {
+  background: #ffffff;
+  border-radius: 4px 4px 0px 0px;
+}
+
+#what h2,
+#where h2,
+#whenFromTo h2 {
+  padding: 10px 10px 0px 10px;
+}
+
+.ticketsBody .name {
+  padding: 10px 40px;
+}
+
+#where {
+  background: #f7f7f7;
+  border-top: 2px dashed rgb(151, 151, 151);
+}
+
+.ticketsBody .location {
+  padding: 10px 40px;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+
+#whenFromTo {
+  background: #f0f0f0;
+  color: rgb(55, 55, 55);
+  display: flex;
+  position: relative;
+}
+
+#when,
+#from,
+#to {
+  flex: 1;
+  padding: 0px 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#when p,
+#from p,
+#to p {
+  margin-left: 10px !important;
+}
+
+#when,
+#to {
+  border: 2px dashed rgb(151, 151, 151);
+}
+
+#from {
+  border-top: 2px dashed rgb(151, 151, 151);
+  border-bottom: 2px dashed rgb(151, 151, 151);
+}
+
+.firstTime,
+.secondTime {
+  margin-top: 10px !important;
+}
+
+#barcodeTicket {
+  background: #e0e0e0;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  color: rgb(55, 55, 55);
+  padding: 40px;
+}
+
+#barcodeTicket img {
+  padding-bottom: 20px;
+}
+
+#barcodeTicket h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#barcodeTicket p {
+  font-size: 1.6em;
+  color: darkmagenta;
+}

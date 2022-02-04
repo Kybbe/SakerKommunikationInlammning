@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Events</title>
+  </head>
+  <body class="user">
+    <h1>Events</h1>
+    <ul id="eventsList"></ul>
+
+    <li class="event" style="display: none">
+      <div class="dateHolder">
+        <p class="date"></p>
+        <p class="time"></p>
+      </div>
+      <!-- 25% -->
+      <div class="infoHolder">
+        <!-- 75% -->
+        <div class="firstRow"><h2 class="name"></h2></div>
+        <div class="secondRow"><p class="location"></p></div>
+        <div class="thirdRow">
+          <p class="tickets">
+            <span class="remaining"></span> /
+            <span class="totalTickets"></span>
+          </p>
+          <p class="price"></p>
+        </div>
+        <!-- includes price -->
+      </div>
+    </li>
+
+    <script src="events.js"></script>
+  </body>
+</html>
