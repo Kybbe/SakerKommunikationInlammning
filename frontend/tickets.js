@@ -30,7 +30,9 @@ function fillFields() {
   let time = currentEvent.time.split(" - ");
   document.querySelector(".firstTime").textContent = time[0];
   document.querySelector(".secondTime").textContent = time[1];
+
   document.querySelector(".ticketNumber").innerHTML = ticket;
+  JsBarcode("#code39", ticket, {format: "code39", background: "transparent", lineColor: "#373737", displayValue: false});
 }
 
 function saveTicket() {

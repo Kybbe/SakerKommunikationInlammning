@@ -40,6 +40,9 @@ async function verify() {
     alert("Invalid token");
     window.location.href = "http://localhost:3000/staff/login";
     return;
+  }  else if(response.status == 404) {
+    alert("Ticket not found");
+    return;
   }
   let data = await response.json();
 

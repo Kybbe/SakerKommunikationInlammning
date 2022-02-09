@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/barcodes/JsBarcode.code39.min.js"></script>
+
     <title>Tickets</title>
   </head>
   <body class="ticketsBody">
@@ -36,7 +39,7 @@
       </div>
 
       <div id="barcodeTicket">
-        <img src="A2ED7barcode.png" alt="Barcode" />
+        <svg id="code39">Actual barcode of ticket</svg>
         <h2>Ticket Number</h2>
         <p class="ticketNumber"></p>
       </div>

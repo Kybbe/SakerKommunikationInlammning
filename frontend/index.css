@@ -78,6 +78,7 @@ body {
   color: white;
   margin-bottom: 20px;
   width: 90vw;
+  max-width: 600px;
   cursor: pointer;
 
   display: flex;
@@ -93,6 +94,7 @@ body {
   text-align: center;
   border: 1px solid white;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .dateHolder .date {
@@ -174,8 +176,7 @@ body {
 }
 
 #ticket {
-  width: 80vw;
-  max-width: 360px;
+  width: 360px;
   border-radius: 4px;
   background-color: white;
 }
@@ -240,15 +241,16 @@ body {
 }
 
 .firstTime,
-.secondTime {
-  margin-top: 10px !important;
+.secondTime,
+.date {
+  margin-bottom: 10px !important;
 }
 
 #barcodeTicket {
   background: #e0e0e0;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  color: rgb(55, 55, 55);
+  color: #373737;
   padding: 40px;
 }
 
